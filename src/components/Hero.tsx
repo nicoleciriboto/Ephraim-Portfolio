@@ -61,6 +61,7 @@ export function Hero() {
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-4 bg-black text-white rounded-full hover:opacity-80 cursor-pointer transition-opacity"
+              style={{pointerEvents: 'auto' , zIndex: 40}}
             >
               Get In Touch
             </button>
@@ -70,6 +71,7 @@ export function Hero() {
               rel="noopener noreferrer"
               download
               className="px-8 py-4 border border-black rounded-full hover:bg-black hover:text-white cursor-pointer transition-all"
+              style={{pointerEvents: 'auto' , zIndex: 40}}
             >
               Download CV
             </a>
@@ -82,8 +84,11 @@ export function Hero() {
           transition={{ delay: 1.2 }}
           onClick={scrollToAbout}
           className="absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer animate-bounce"
+          style={{pointerEvents: 'auto' , zIndex: 40}}
+
         >
-          <ArrowDown className="w-6 h-6" />
+          <ArrowDown className="w-6 h-6"
+           />
         </motion.button>
       </div>
     </section>
