@@ -45,6 +45,16 @@ const projects = [
       { label: 'Market Research', value: '5x' },
     ],
   },
+    {
+    title: 'TVC Commercial',
+    category: 'Video marketing',
+    description: 'Created an engaging marketing reel for Ocean Basket Zimbabwe.',
+    url: 'https://www.facebook.com/share/r/17BNeCqp7Y/?mibextid=wwXIfr',
+    metrics: [
+      { label: 'Engagement', value: '10x' },
+      { label: 'Views', value: '100+' },
+    ],
+  },
 ];
 
 export function Projects() {
